@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+ _   _ _     ___             __  __                     
+| | | (_)   |_ _|_ __ ___   |  \/  | __ _ _ __ ___ ___  
+| |_| | |    | || '_ ` _ \  | |\/| |/ _` | '__/ __/ _ \ 
+|  _  | |_   | || | | | | | | |  | | (_| | | | (_| (_) |
+|_| |_|_( ) |___|_| |_| |_| |_|  |_|\__,_|_|  \___\___/ 
+        |/
+ 
+ I'm also Under Construction!
+-->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marco: Welcome</title>
+<meta name="description" content="Marco is brought to you by, Jason Gessner, Pete Prodehl and Mike Massie" />
+<meta name="keywords" content="arduino, kit, DIY, location, GPS, Google Latitude, marco, geofencing" />
+<link rel="stylesheet" type="text/css" href="css/screen.css" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="contentWindow" align="center">
+<h1 class="logo"><img src="img/AltMarcoLogoL.png" width="300px" alt="marcologo"/></h1>
+
+<h2 class="def">a desktop display that notifies others where you are</h2>
+
+<p class="inst">To use Marco, you will need an active <a class="url" href="https://www.google.com/latitude" alt="Google Latitude">Google Latitude</a> account and to give us access to your location at the finest resolution. Don't worry, we won't log the locations. We will only use the location to choose which of your configured locations it is closest to in order to power your badge or Marco Box device.</p>
+
+<p class="inst">To get started, click on the "Authorize" button below to register and get started setting up your locations.</p>
+
+<a href="http://marco-box.appspot.com/account" alt="Sign into Google Account" class="button">Under Construction</a>
+<div id="popup"></div>
+
+<div class="navBox">
+	<a class="stepBox" 
+   onmouseover="ShowContent('authPopUp'); return true;"
+   onmouseout="HideContent('authPopUp'); return true;"
+   href="javascript:ShowContent('authPopUp')">1</a>
+	<a class="stepBox" 
+   onmouseover="ShowContent('navPopUp'); return true;"
+   onmouseout="HideContent('navPopUp'); return true;"
+   href="javascript:ShowContent('navPopUp')">2</a>
+	<a class="stepBox" 
+   onmouseover="ShowContent('locPopUp'); return true;"
+   onmouseout="HideContent('locPopUp'); return true;"
+   href="javascript:ShowContent('locPopUp')">3</a>
+	<div class="stepBox">4</div>
+	<hr class="line">
+</div>
+
+
+
+<div id="authPopUp"><div class="arrow-up"></div>
+This is a test of the content describing this step - Authentication
+</div>
+
+<div id="navPopUp">
+This is a test of the content describing this step - Navigation
+</div>
+
+<div id="locPopUp">
+You're all set up, now we just need to create your locations on the map
+</div>
+
+
+</div>
+
+</div> <!-- End Containter -->
+<div class="footer">© themarcobox.com  •  About  •  Blog  •  Privacy  •  Contact Us  •  Made by <a href="http://www.multiply.org/">Jason Gessner</a>, <a href="http://rasterweb.net/raster/">Pete Prodoehl</a> and <a href="http://www.michaelmassie.com">Mike Massie</a></div>
+
+</body>
+
+    <!-- GOOGLE ANALYTICS-->
+    <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-10525263-2']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+     </script>
+     
+     
+     <!-- Mouse Over Script -->
+     <script type="text/javascript" language="JavaScript">
+function ShowContent(d) {
+if(d.length < 1) { return; }
+document.getElementById(d).style.display = "block";
+}
+function HideContent(d) {
+if(d.length < 1) { return; }
+document.getElementById(d).style.display = "none";
+}
+function ReverseContentDisplay(d) {
+if(d.length < 1) { return; }
+if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+else { document.getElementById(d).style.display = "none"; }
+}
+</script>
+
+</html>
